@@ -1,6 +1,10 @@
 import {combineReducers} from "redux";
 
-const accountReducer = (state, action) => {
+const DEFAULT_STATE = {
+
+};
+
+const accountReducer = (state = DEFAULT_STATE, action) => {
     switch (action.type) {
         case 'ADD_ACCOUNT':
         case 'REMOVE_ACCOUNT':
@@ -8,3 +12,7 @@ const accountReducer = (state, action) => {
             return state;
     }
 };
+
+export default combineReducers({
+    accounts: accountReducer()
+})

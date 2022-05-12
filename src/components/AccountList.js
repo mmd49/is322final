@@ -9,7 +9,7 @@ class AccountList extends React.component {
         return accountArr.map( acc =>{
             return (
             <li className="list-group-item" key={acc.id}>
-                { acc.name} - {acc.balance}
+                {acc.name} - {acc.balance}
             </li>
             );
         })

@@ -3,8 +3,6 @@ import React from "react";
 import AccountList from "./AccountList";
 
 const App = () => {
-
-
     return (
         <div className="container" style={{ marginTop: '15px'}}>
             <div className="row">

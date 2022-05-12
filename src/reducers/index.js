@@ -9,6 +9,8 @@ accounts: [
 ]
 };
 
+
+
 const accountReducer = (state = DEFAULT_STATE, action) => {
     switch (action.type) {
         case 'ADD_ACCOUNT':
@@ -20,4 +22,4 @@ const accountReducer = (state = DEFAULT_STATE, action) => {
 
 export default combineReducers({
     accounts: accountReducer()
-})
+});
